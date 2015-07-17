@@ -1,0 +1,4 @@
+entities/Users.class
+entities/DisposableTask.class
+entities/GlobalTask.class
+entities/DailyTask.class

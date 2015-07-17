@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="pelicanservice" transaction-type="JTA">
+        <jta-data-source>java:jboss/jdbc/pelican-service</jta-data-source>
+        <properties>
+            <!--<property name="hibernate.dialect" value="com.autoxpl.pgutil.PostgreSQLDialect"/>-->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL9Dialect"/>
+            <property name="hibernate.show_sql" value="false"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.hbm2ddl.auto" value="none"/>
+            <property name="hibernate.naming_strategy" value="org.hibernate.cfg.ImprovedNamingStrategy"/>
+            <!--<property name="hibernate.jdbc.batch_size" value="5000"/>-->
+            <property name="hibernate.generate_statistics" value="true"/>
+
+        </properties>
+    </persistence-unit>
+</persistence>
